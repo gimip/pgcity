@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="pgcity" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug - Windows">
+				<Option platforms="Windows;" />
+				<Option output="bin/Debug/pgcity" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="glm" />
+					<Add directory="glew/include" />
+					<Add directory="glfw/include" />
+					<Add directory="soil/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-lglew32s" />
+					<Add option="-lglfw3" />
+					<Add option="-lgdi32" />
+					<Add option="-lsoil" />
+					<Add option="-lopengl32" />
+					<Add directory="glfw/lib-mingw" />
+					<Add directory="glew/lib/Release/Win32" />
+					<Add directory="soil/lib" />
+				</Linker>
+			</Target>
+			<Target title="Debug - Linux">
+				<Option platforms="Unix;" />
+				<Option output="bin/Debug/pgcity" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lGLEW" />
+					<Add option="-lglfw" />
+					<Add option="-lX11" />
+					<Add option="-lXrandr" />
+					<Add option="-lXinerama" />
+					<Add option="-lXi" />
+					<Add option="-lXcursor" />
+					<Add option="-lSOIL" />
+					<Add option="-lGL" />
+					<Add option="-lrt" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/pgcity" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Block.cpp" />
+		<Unit filename="Block.hpp" />
+		<Unit filename="Blocks.cpp" />
+		<Unit filename="Blocks.hpp" />
+		<Unit filename="Building.cpp" />
+		<Unit filename="Building.hpp" />
+		<Unit filename="Camera.hpp" />
+		<Unit filename="Cell.cpp" />
+		<Unit filename="Cell.hpp" />
+		<Unit filename="City.cpp" />
+		<Unit filename="City.hpp" />
+		<Unit filename="Land.cpp" />
+		<Unit filename="Land.hpp" />
+		<Unit filename="Node.cpp" />
+		<Unit filename="Node.hpp" />
+		<Unit filename="Object.cpp" />
+		<Unit filename="Object.hpp" />
+		<Unit filename="Population.cpp" />
+		<Unit filename="Population.hpp" />
+		<Unit filename="PositionMatrix.cpp" />
+		<Unit filename="PositionMatrix.hpp" />
+		<Unit filename="PositionSquare.cpp" />
+		<Unit filename="PositionSquare.hpp" />
+		<Unit filename="Road.cpp" />
+		<Unit filename="Road.hpp" />
+		<Unit filename="Roadmap.cpp" />
+		<Unit filename="Roadmap.hpp" />
+		<Unit filename="Shader.hpp" />
+		<Unit filename="Terrain.cpp" />
+		<Unit filename="Terrain.hpp" />
+		<Unit filename="constants.hpp" />
+		<Unit filename="graphicUtilities.cpp" />
+		<Unit filename="graphicUtilities.hpp" />
+		<Unit filename="graphics.cpp" />
+		<Unit filename="graphics.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="roadmapTools.cpp" />
+		<Unit filename="roadmapTools.hpp" />
+		<Unit filename="terrainTools.cpp" />
+		<Unit filename="terrainTools.hpp" />
+		<Unit filename="textureUtilities.cpp" />
+		<Unit filename="textureUtilities.hpp" />
+		<Unit filename="utilities.cpp" />
+		<Unit filename="utilities.hpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

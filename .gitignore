@@ -1,0 +1,17 @@
+*.o
+*.svg
+*.exe
+*.depend
+*.layout
+*.dll
+*.save
+*.txt
+konstruktDestrukt.txt
+ridgesHeights.txt
+srand.txt
+/glm
+/glfw
+/glew
+/soil
+pgcity
+/.project
